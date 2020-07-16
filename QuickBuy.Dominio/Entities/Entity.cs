@@ -27,6 +27,8 @@ namespace QuickBuy.Dominio.Entities
         protected bool EhValido 
         {
             get { return !mensagemValidacao.Any(); }
+            //verifica se algum elemento de uma sequência atende ou não a uma condição específica
+            //O Any verifica se existe algum elemento na lista ou não 
         }
 
     }

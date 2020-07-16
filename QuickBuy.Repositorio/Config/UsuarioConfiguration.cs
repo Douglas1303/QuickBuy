@@ -31,7 +31,7 @@ namespace QuickBuy.Repositorio.Config
                 .IsRequired()
                 .HasMaxLength(50); 
                 
-
+            //Relacionamento 1:N (Um usuário pode ter muitos pedidos e cada pedido tem 1 usuário)
             builder.HasMany(u => u.Pedidos)
                 .WithOne(p => p.Usuario);     
 

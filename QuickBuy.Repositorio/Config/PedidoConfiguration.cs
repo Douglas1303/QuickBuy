@@ -38,6 +38,7 @@ namespace QuickBuy.Repositorio.Config
             builder.Property(p => p.NumeroEndereco)
                 .IsRequired();
 
+            //Relacionamento 1:1 (Para cada pedido tem 1 forma de pagamento)
             builder.HasOne(p => p.FormaPagamento); 
         }
     }
